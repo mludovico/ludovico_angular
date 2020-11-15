@@ -1,23 +1,27 @@
 <mat-toolbar>
   <span>Ludovico's Angular Portfolio</span>
-  <button mat-button>
+  <button mat-button (click)="onClick('/personal')">
     <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon>
     Pessoal
   </button>
-  <button mat-button>
+  <button mat-button (click)="onClick('/education')">
     <mat-icon aria-hidden="false" aria-label="Example home icon">school</mat-icon>
     Formação
   </button>
-  <button mat-button>
+  <button mat-button (click)="onClick('/work')">
     <mat-icon aria-hidden="false" aria-label="Example home icon">work</mat-icon>
     Experiência Profissional
   </button>
-  <button mat-button>
+  <button mat-button (click)="onClick('/contact')">
     <mat-icon aria-hidden="false" aria-label="Example home icon">chat</mat-icon>
     Contato
   </button>
   <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+  <button mat-button [matMenuTriggerFor]="menu" class="example-icon" aria-label="Example icon-button with share icon">
     <mat-icon aria-hidden="false" aria-label="Example home icon">info</mat-icon>
   </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Português</button>
+    <button mat-menu-item>Inglês</button>
+  </mat-menu>
 </mat-toolbar>
