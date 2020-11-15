@@ -1,27 +1,39 @@
 # Ludovico
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+This project illustrates the use of Angular to create a portfolio page with my personal, educational, work experience and contact information.
 
-## Development server
+## Components
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This application uses 5 components:
+* Home
+  A content page component used as default route and which holds personal information.
 
-## Code scaffolding
+* Education
+  Another content page component that holds my education information.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Professional
+  A content page component that holds my work experience information.
 
-## Build
+* Contact
+  The last content page component with all of my main contacts.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Navbar
+  Lastly a navbar that is used in all of the latter content pages.
 
-## Running unit tests
+## Material Components
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The app also uses some of the Material Design components of `@angular/material` package such as:
+* toolbar
+* menu
+* button
+* card
+* icon
+etc.
 
-## Running end-to-end tests
+## Binding and string interpolation
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+As a use case a interpolation was used at HomeComponent to show my current age whenever the user accesses the page. It is calculated using current date difference from my birth date.
 
-## Further help
+## Style
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Some custom additional style was made to the components just for playing around and understanding the framework.
