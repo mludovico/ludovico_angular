@@ -2,6 +2,6 @@
   flex: 1 1 auto;
 }
 
-mat-toolbar{
+mat-toolbar, ::ng-deep .mat-menu-content{
   background-color: purple;
 }
