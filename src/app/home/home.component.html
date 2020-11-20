@@ -1,32 +1,26 @@
 <spa-navbar></spa-navbar>
 <div class="container">
   <mat-card class="info-card">
-    <mat-card-title>Pessoal</mat-card-title>
+    <mat-card-title>{{'homeTabAbout' | translate}}</mat-card-title>
     <mat-card-content>
-      <p><strong>Nome: </strong>Marcelo Ludovico de Paula</p>
-      <p><strong>Idade: </strong>{{age}}</p>
-      <p><strong>Propósito: </strong>Buscar soluções simples e criativas par as dores e problemas das pessoas usando tencologia</p>
+      <p><strong>{{'aboutPersonalNameLabel' | translate}}: </strong>{{'aboutNameValue' | translate}}</p>
+      <p><strong>{{'Idade' | translate}}: </strong>{{age}}</p>
+      <p><strong>{{'aboutPersonalMissionLabel' | translate}}: </strong>{{'aboutMissionValue' | translate}}</p>
     </mat-card-content>
   </mat-card>
   <mat-card class="info-card">
-    <mat-card-title>Localidade</mat-card-title>
+    <mat-card-title>{{'aboutLocation' | translate}}</mat-card-title>
     <mat-card-content>
-      <p><strong>País: </strong>Brasil</p>
-      <p><strong>Estado: </strong>São Paulo</p>
-      <p><strong>Cidade: </strong>Campinas</p>
+      <p><strong>{{'aboutLocationCountryLabel' | translate}}: </strong>{{'aboutLocationCountryValue' | translate}}</p>
+      <p><strong>{{'aboutLocationStateLabel' | translate}}: </strong>{{'aboutLocationStateValue' | translate}}</p>
+      <p><strong>{{'aboutLocationCityLabel' | translate}}: </strong>{{'aboutLocationCityValue' | translate}}</p>
     </mat-card-content>
   </mat-card>
   <mat-card class="info-card">
-    <mat-card-title>Habilidades</mat-card-title>
+    <mat-card-title>{{'aboutSkills' | translate}}</mat-card-title>
     <mat-card-content>
-      <p><strong>Flutter</strong></p>
-      <p><strong>C#</strong></p>
-      <p><strong>PHP</strong></p>
-      <p><strong>PostgreSQL</strong></p>
-      <p><strong>Javascript</strong></p>
-      <p><strong>HTML</strong></p>
-      <p><strong>CSS</strong></p>
-      <p><strong>Angular: </strong>Aprendendo</p>
+      *ngFor="let skill of {{'aboutSkillValues' | translate}}"
+        <p><strong>{{skill}}</strong></p>
     </mat-card-content>
   </mat-card>
 </div>

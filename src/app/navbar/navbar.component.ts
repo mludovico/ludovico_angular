@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'spa-navbar',
@@ -7,13 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  translate: TranslateService;
+
+  constructor(translate: TranslateService) {
+    this.translate = translate;
+  }
 
   ngOnInit(): void {
+    
   }
 
   onClick(path) {
     window.location.href = path;
+  }
+
+  changeLang(lang: string){
+    this.translate.use(lang);
   }
 
 }

@@ -1,0 +1,108 @@
+{
+  "title": "Marcelo Ludovico",
+  "langMenuPt": "Brazilian Portuguese",
+  "langMenuEn": "US English",
+  "langMenuIt": "Italian",
+  "homeTabAbout": "About me",
+  "homeTabSchool": "Education",
+  "homeTabExperience": "Experience",
+  "homeTabContact": "Hire me!",
+  "aboutPersonal": "Personal",
+  "aboutPersonalNameLabel": "Name",
+  "aboutPersonalNameValue": "Marcelo Ludovico de Paula",
+  "aboutPersonalAgeLabel": "Age",
+  "aboutPersonalMissionLabel": "Purpose",
+  "aboutPersonalMissionValue": "To find simple and creative solutions to people´s problems and pains",
+  "aboutPersonalCitizenship": "Brazilian, Italian",
+  "aboutLocation": "Location",
+  "aboutLocationCountryLabel": "Country",
+  "aboutLocationCountryValue": "Brazil",
+  "aboutLocationStateLabel": "Country",
+  "aboutLocationStateValue": "Brazil",
+  "aboutLocationCityLabel": "Country",
+  "aboutLocationCityValue": "Brazil",
+  "aboutSkills": "Skills",
+  "aboutSkillsValues": [
+    "Flutter",
+    "C#",
+    "PHP",
+    "PostgreSQL",
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ],
+  "education": [
+    {
+      "gradTitle": "Bachelor",
+      "courseLabel": "Course",
+      "courseName": "Computer Science",
+      "institutionLabel": "Institution",
+      "institution": "Universidade Cruzeiro do Sul",
+      "yearLabel": "Graduation year",
+      "gradYear": "2023"
+    },
+    {
+      "gradTitle": "MBA",
+      "courseLabel": "Course",
+      "courseName": "Project Management",
+      "institutionLabel": "Institution",
+      "institution": "Universidade São Francisco",
+      "yearLabel": "Graduation Year",
+      "gradYear": "2013"
+    },
+    {
+      "gradTitle": "Bachelor",
+      "courseLabel": "Course",
+      "courseName": "Electronic Engineer",
+      "institutionLabel": "Institution",
+      "institution": "Universidade Paulista UNIP",
+      "yearLabel": "Graduation year",
+      "gradYear": "2010"
+    }
+  ],
+  "work": [
+    {
+      "workTitle": "Flutter Developer",
+      "companyLabel": "Company",
+      "company": "Freelancer",
+      "fromLabel": "From",
+      "from": "2018",
+      "untilLabel": "Until",
+      "until": "now",
+      "descriptionLabel": "Description",
+      "description": "Android and iOS app development using Flutter as main framework from design to publishing the app on both stores"
+    },
+    {
+      "workTitle": "Technical Supervisor",
+      "companyLabel": "Company",
+      "company": "EPTV Campinas",
+      "fromLabel": "From",
+      "from": "2014",
+      "untilLabel": "Until",
+      "until": "now",
+      "descriptionLabel": "Description",
+      "description": "Technical team supervising and software solutions development using a wide range of technologies like C#, PHP, JavaScript, HTML, CSS, PostgreSQL, VMWare, Docker"
+    },
+    {
+      "workTitle": "Engineer",
+      "companyLabel": "Company",
+      "company": "EPTV Campinas",
+      "fromLabel": "From",
+      "from": "2012",
+      "untilLabel": "Until",
+      "until": "2014",
+      "descriptionLabel": "Description",
+      "description": "Design and development of tech solutions using a wide range of technologies like C#, PHP, JavaScript, HTML, CSS, PostgreSQL and in house made electronic systems or using ready products like RaspberryPi and Arduino"
+    }
+  ],
+  "contacts":
+  {
+    "phoneLabel": "Phone",
+    "phone": "+55 (19) 996856275",
+    "mail": "maludovico@gmail.com",
+    "skype": "maludovico@msn.com",
+    "linkedin": "https://www.linkedin.com/in/marcelo-ludovico-83992931/",
+    "github": "https://github.com/mludovico"
+  },
+  "aboutApp": "This app was made using Flutter with the Material and Cupertino libraries to illustrate its use on each platform. The views have been adaptaded for the web version of Flutter itself."
+}

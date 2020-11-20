@@ -2,27 +2,27 @@
   <span>Ludovico's Angular Portfolio</span>
   <button mat-button (click)="onClick('/personal')">
     <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon>
-    Pessoal
+    {{'homeTabAbout' | translate}}
   </button>
   <button mat-button (click)="onClick('/education')">
     <mat-icon aria-hidden="false" aria-label="Example home icon">school</mat-icon>
-    Formação
+    {{'homeTabSchool' | translate}}
   </button>
   <button mat-button (click)="onClick('/work')">
     <mat-icon aria-hidden="false" aria-label="Example home icon">work</mat-icon>
-    Experiência Profissional
+    {{'homeTabExperience' | translate}}
   </button>
   <button mat-button (click)="onClick('/contact')">
     <mat-icon aria-hidden="false" aria-label="Example home icon">chat</mat-icon>
-    Contato
+    {{'homeTabContact' | translate}}
   </button>
   <span class="example-spacer"></span>
   <button mat-button [matMenuTriggerFor]="menu" class="example-icon" aria-label="Example icon-button with share icon">
-    pt
+    {{translate.currentLang}}
     <mat-icon aria-hidden="false" aria-label="Example home icon">arrow_drop_down</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>Português</button>
-    <button mat-menu-item>Inglês</button>
+    <button (click)="changeLang('pt')" mat-menu-item>{{'langMenuPt' | translate}}</button>
+    <button (click)="changeLang('en')" mat-menu-item>{{'langMenuEn' | translate}}</button>
   </mat-menu>
 </mat-toolbar>

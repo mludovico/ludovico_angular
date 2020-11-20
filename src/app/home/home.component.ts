@@ -1,5 +1,6 @@
 import { getLocaleDateTimeFormat } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'spa-home',
@@ -8,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  translate: TranslateService;
+
+  constructor(translate: TranslateService) {
+    this.translate = translate;
+  }
 
   age: number;
   hoje: number;
