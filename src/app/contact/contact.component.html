@@ -8,9 +8,9 @@
       <a href="tel:+5519996856275">
         <mat-card-header>
           <div mat-card-avatar class="card-image phone"></div>
-          <mat-card-title>Telefone</mat-card-title>
+          <mat-card-title>{{infos.phoneLabel || translate}}</mat-card-title>
           <mat-card-subtitle>
-            +55 (19) 996856275
+            {{infos.phone || translate}}
           </mat-card-subtitle>
         </mat-card-header>
       </a>

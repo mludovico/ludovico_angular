@@ -1,27 +1,11 @@
 <spa-navbar></spa-navbar>
 <div class="container">
-  <mat-card class="info-card">
-    <mat-card-title>Graduação</mat-card-title>
+  <mat-card class="info-card" *ngFor="let item of education">
+    <mat-card-title>{{item.gradTitle | translate}}</mat-card-title>
     <mat-card-content>
-      <p><strong>Curso: </strong>Ciência da Computação</p>
-      <p><strong>Instituição: </strong>Universidade Cruzeiro do Sul</p>
-      <p><strong>Ano de conclusão: </strong>2023</p>
-    </mat-card-content>
-  </mat-card>
-  <mat-card class="info-card">
-    <mat-card-title>MBA</mat-card-title>
-    <mat-card-content>
-      <p><strong>Curso: </strong>Gestão de projetos</p>
-      <p><strong>Instituição: </strong>Universidade São Francisco</p>
-      <p><strong>Ano de conclusão: </strong>2013</p>
-    </mat-card-content>
-  </mat-card>
-  <mat-card class="info-card">
-    <mat-card-title>Graduação</mat-card-title>
-    <mat-card-content>
-      <p><strong>Curso: </strong>Engenharia Elétrica</p>
-      <p><strong>Instituição: </strong>Universidade Paulista UNIP</p>
-      <p><strong>Ano de conclusão: </strong>2010</p>
+      <p><strong>{{item.courseLabel || translate}}: </strong>{{item.courseName || translate}}</p>
+      <p><strong>{{item.institutionLabel || translate}}: </strong>{{item.institution || translate}}</p>
+      <p><strong>{{item.yearLabel || translate}}: </strong>{{item.gradYear || translate}}</p>
     </mat-card-content>
   </mat-card>
 </div>

@@ -10,6 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class HomeComponent implements OnInit {
 
   translate: TranslateService;
+  skills: string[];
 
   constructor(translate: TranslateService) {
     this.translate = translate;
@@ -21,6 +22,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.age = new Date(new Date().valueOf() - new Date(1981, 3, 10).valueOf()).getUTCFullYear() - 1970;
+    this.translate.get('aboutSkillsValue').forEach(item => this.skills.push(item));
   }
 
 }

@@ -3,9 +3,9 @@
   <mat-card class="info-card">
     <mat-card-title>{{'homeTabAbout' | translate}}</mat-card-title>
     <mat-card-content>
-      <p><strong>{{'aboutPersonalNameLabel' | translate}}: </strong>{{'aboutNameValue' | translate}}</p>
-      <p><strong>{{'Idade' | translate}}: </strong>{{age}}</p>
-      <p><strong>{{'aboutPersonalMissionLabel' | translate}}: </strong>{{'aboutMissionValue' | translate}}</p>
+      <p><strong>{{'aboutPersonalNameLabel' | translate}}: </strong>{{'aboutPersonalNameValue' | translate}}</p>
+      <p><strong>{{'aboutPersonalAgeLabel' | translate}}: </strong>{{age}}</p>
+      <p><strong>{{'aboutPersonalMissionLabel' | translate}}: </strong>{{'aboutPersonalMissionValue' | translate}}</p>
     </mat-card-content>
   </mat-card>
   <mat-card class="info-card">
@@ -19,8 +19,9 @@
   <mat-card class="info-card">
     <mat-card-title>{{'aboutSkills' | translate}}</mat-card-title>
     <mat-card-content>
-      *ngFor="let skill of {{'aboutSkillValues' | translate}}"
-        <p><strong>{{skill}}</strong></p>
+      <p *ngFor="let skill of skills">
+        <strong>{{Skill}}</strong>
+      </p>
     </mat-card-content>
   </mat-card>
 </div>
