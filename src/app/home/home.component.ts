@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
 
   constructor(translate: TranslateService) {
     this.translate = translate;
+    translate
   }
 
   age: number;
@@ -22,7 +23,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.age = new Date(new Date().valueOf() - new Date(1981, 3, 10).valueOf()).getUTCFullYear() - 1970;
-    this.translate.get('aboutSkillsValue').forEach(item => this.skills.push(item));
+    this.translate.get('aboutSkillsValues').subscribe(
+      value => this.skills = value,
+      error => console.log(error),
+      () => console.log('Observable closed')
+    )
   }
 
 }

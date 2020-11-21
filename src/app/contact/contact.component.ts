@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ContactComponent implements OnInit {
 
-  infos: Object
+  infos: any
 
   constructor(translate: TranslateService) {
     translate.get('contacts').subscribe(

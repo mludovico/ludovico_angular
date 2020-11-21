@@ -1,12 +1,12 @@
 <spa-navbar></spa-navbar>
 <div class="container">
   <mat-card class="info-card" *ngFor="let item of work">
-    <mat-card-title>{{item.workTitle || translate}}</mat-card-title>
+    <mat-card-title>{{item.workTitle | translate}}</mat-card-title>
     <mat-card-content>
-      <p><strong>{{item.companyLabel || translate}}: </strong>{{item.company || translate}}</p>
-      <p><strong>{{item.fromLabel || translate}}: </strong>{{item.from || translate}}</p>
-      <p><strong>{{item.untilLabel || translate}}: </strong>{{item.until || translate}}</p>
-      <p><strong>{{item.descriptionLabel || translate}}: </strong>{{item.description || translate}}</p>
+      <p><strong>{{item.companyLabel | translate}}: </strong>{{item.company | translate}}</p>
+      <p><strong>{{item.fromLabel | translate}}: </strong>{{item.from | translate}}</p>
+      <p><strong>{{item.untilLabel | translate}}: </strong>{{item.until | translate}}</p>
+      <p><strong>{{item.descriptionLabel | translate}}: </strong>{{item.description | translate}}</p>
     </mat-card-content>
   </mat-card>
 </div>

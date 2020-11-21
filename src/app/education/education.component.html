@@ -3,9 +3,9 @@
   <mat-card class="info-card" *ngFor="let item of education">
     <mat-card-title>{{item.gradTitle | translate}}</mat-card-title>
     <mat-card-content>
-      <p><strong>{{item.courseLabel || translate}}: </strong>{{item.courseName || translate}}</p>
-      <p><strong>{{item.institutionLabel || translate}}: </strong>{{item.institution || translate}}</p>
-      <p><strong>{{item.yearLabel || translate}}: </strong>{{item.gradYear || translate}}</p>
+      <p><strong>{{item.courseLabel | translate}}: </strong>{{item.courseName | translate}}</p>
+      <p><strong>{{item.institutionLabel | translate}}: </strong>{{item.institution | translate}}</p>
+      <p><strong>{{item.yearLabel | translate}}: </strong>{{item.gradYear | translate}}</p>
     </mat-card-content>
   </mat-card>
 </div>
